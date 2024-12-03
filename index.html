@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #060606;
+        width: 1440px;
+      }
+      .number {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: lowercase;
+        color: #fff;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 45px;
+        gap: 21px;
+      }
+      .menu {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 122px;
+        margin-left: -143px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .circles {
+        display: flex;
+        justify-content: flex-end;
+        gap: 28px;
+        padding-right: 45px;
+        width: 42px;
+        height: 42px;
+        margin-top: 15px;
+      }
+
+      .text {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 150px;
+        text-transform: uppercase;
+        color: #ccfd83;
+        background-image: url(images/rect.png);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+        margin-top: 20px;
+      }
+      .but {
+        background-color: #c3f909;
+        width: 127px;
+        height: 127px;
+        color: #060606;
+        border-radius: 60px;
+        border: none;
+        font-family: 'montserrat';
+        font-weight: 600;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #000;
+        border-radius: 100%;
+        /* position: absolute; */
+        /* margin-top: -230px;
+        margin-left: 1200px; */
+        /* display: flex; */
+        /* justify-content: end;
+        align-items: end; */
+        margin-top: -230px;
+        margin-left: 1300px;
+      }
+      .firstblock {
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        margin-left: 120px;
+        margin-top: 30px;
+      }
+      .numb1 {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 54px;
+        text-transform: uppercase;
+        color: #c3f909;
+      }
+      .firsttext {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 19px;
+        color: #fff;
+      }
+      .fillform {
+        margin-left: 52px;
+        display: block;
+      }
+      .firsttext {
+        margin-top: -30px;
+      }
+      .secondscreen {
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        margin-left: -120px;
+      }
+      .choose {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 70px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      .big {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 350px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: -440px;
+      }
+      .firstimt {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      .thirdscreen {
+        display: flex;
+        gap: 70px;
+      }
+      .lor {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        color: #929292;
+      }
+
+      .butt {
+        background-color: #c3f909;
+        width: 77px;
+        height: 77px;
+        color: #060606;
+        border-radius: 60px;
+        border: none;
+        font-family: 'montserrat';
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #000;
+        border-radius: 100%;
+      }
+      .twobut {
+        display: block;
+        margin-left: 30px;
+        gap: 10px;
+      }
+
+      /* media */
+      @media only screen and (min-width: 360px) and (max-width: 414px) {
+        body {
+          width: 100%;
+        }
+        .phone {
+          display: none;
+        }
+        .circles {
+          display: none;
+        }
+        .secondscreen {
+          display: block;
+          margin-left: -55px;
+        }
+        .text {
+          font-size: 30px;
+          background-image: none;
+          justify-content: center;
+          margin-left: -10px;
+        }
+        .thirdscreen {
+          display: block;
+          margin-left: 70px;
+        }
+        .but {
+          margin-top: 40px;
+          margin-left: 140px;
+        }
+        .choose {
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          margin-left: 40px;
+          margin-top: 30px;
+        }
+        .big {
+          display: none;
+        }
+        .menu {
+          gap: 20px;
+          font-size: 18px;
+          margin-left: 0px;
+
+          font-family: Proxima Nova;
+          font-weight: 400;
+          line-height: 140%;
+          color: #fff;
+          display: flex;
+          justify-content: cennter;
+        }
+        .number {
+          font-size: 0px;
+        }
+        .header {
+          display: flex;
+          justify-content: center;
+        }
+        .left {
+          display: flex;
+          justify-content: flex-start;
+          padding-left: 0px;
+          gap: 21px;
+        }
+        .twobut {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          margin-left: -10px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 100%;
+        }
+        .phone {
+          display: none;
+        }
+        .circles {
+          display: none;
+        }
+        .secondscreen {
+          display: block;
+          margin-left: -55px;
+        }
+        .text {
+          font-size: 30px;
+          background-image: none;
+          justify-content: center;
+          margin-left: -10px;
+        }
+        .thirdscreen {
+          display: block;
+          margin-left: 70px;
+        }
+        .but {
+          margin-top: 40px;
+          margin-left: 140px;
+        }
+        .choose {
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          margin-left: 40px;
+          margin-top: 30px;
+        }
+        .big {
+          display: none;
+        }
+        .menu {
+          gap: 20px;
+          font-size: 18px;
+          margin-left: 0px;
+
+          font-family: Proxima Nova;
+          font-weight: 400;
+          line-height: 140%;
+          color: #fff;
+          display: flex;
+          justify-content: cennter;
+        }
+        .number {
+          font-size: 0px;
+        }
+        .header {
+          display: flex;
+          justify-content: center;
+        }
+        .left {
+          display: flex;
+          justify-content: flex-start;
+          padding-left: 0px;
+          gap: 21px;
+        }
+        .twobut {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          margin-left: -10px;
+        }
+      }
+    </style>
+    <!-- menu -->
+    <div class="header">
+      <div class="left">
+        <div class="phone"><img src="images/phone.svg" alt="" /></div>
+        <div class="number"><p>459-568-017</p></div>
+      </div>
+      <div class="menu">
+        <a href="index.html"
+          ><p><b>Главная</b></p></a
+        >
+        <a href="secondpage.html"><p>Мероприятия</p></a>
+        <a href="form.html"><p>Контакты</p></a>
+      </div>
+      <div class="circles">
+        <a href="https://mail.ru/"><img src="images/circle1.svg" alt="" /></a>
+        <a href="http://www.facebook.com.vn/"
+          ><img src="images/circle2.svg" alt=""
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/circle3.svg" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="firstscreen">
+      <div class="twobut">
+        <a href="#secondscreen"><button class="butt">1</button></a>
+        <a href="#thirdscreen"><button class="butt">2</button></a>
+      </div>
+      <div class="text"><h1>Лофты</h1></div>
+    </div>
+    <!-- <button class="but" onclick="showForm()">Связаться</button> -->
+
+    <div class="secondscreen" id="secondscreen">
+      <!-- первый блок -->
+      <div class="firstblock">
+        <div class="fillform">
+          <div class="numb1"><p>01</p></div>
+          <div class="firsttext">
+            <p>
+              заполнить <br />
+              форму на сайте
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- второй блок -->
+      <div class="firstblock">
+        <div class="fillform">
+          <div class="numb1"><p>02</p></div>
+          <div class="firsttext">
+            <p>
+              мы связываемся <br />
+              с вами
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- третий блок -->
+      <div class="firstblock">
+        <div class="fillform">
+          <div class="numb1"><p>03</p></div>
+          <div class="firsttext">
+            <p>
+              подбираем <br />
+              объекты
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- четвертый блок -->
+      <div class="firstblock">
+        <div class="fillform">
+          <div class="numb1"><p>04</p></div>
+          <div class="firsttext">
+            <p>
+              организуем <br />
+              просмотр
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- второй ряд -->
+    <div class="secondscreen">
+      <!-- первый блок -->
+      <div class="firstblock">
+        <div class="fillform">
+          <div class="numb1"><p>05</p></div>
+          <div class="firsttext">
+            <p>
+              вы подписываете <br />
+              договор
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- второй блок -->
+      <div class="firstblock">
+        <div class="fillform">
+          <div class="numb1"><p>06</p></div>
+          <div class="firsttext">
+            <p>
+              вносите <br />
+              предоплату
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- третий блок -->
+      <div class="firstblock">
+        <div class="fillform">
+          <div class="numb1"><p>07</p></div>
+          <div class="firsttext">
+            <p>
+              мы организуем <br />
+              доп. услуги
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- четвертый блок -->
+      <div class="firstblock">
+        <div class="fillform">
+          <div class="numb1"><p>08</p></div>
+          <div class="firsttext">
+            <p>
+              завершение <br />
+              сотрудничества
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="photos" id="thirdscreen">
+      <div class="choose"><h2>выберите формат мероприятия</h2></div>
+    </div>
+    <div class="thirdscreen">
+      <div class="big">
+        <p>01</p>
+      </div>
+
+      <div class="firstimbl">
+        <div class="firstim"><img src="images/firstim.png" alt="" /></div>
+        <div class="firstimt"><p>конференции</p></div>
+        <div class="lor">
+          <p>
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit
+          </p>
+        </div>
+      </div>
+
+      <div class="firstimbl">
+        <div class="firstim"><img src="images/secondim.png" alt="" /></div>
+        <div class="firstimt"><p>форумы</p></div>
+        <div class="lor">
+          <p>
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit
+          </p>
+        </div>
+      </div>
+
+      <div class="firstimbl">
+        <div class="firstim"><img src="images/thirdim.png" alt="" /></div>
+        <div class="firstimt"><p>круглые столы</p></div>
+        <div class="lor">
+          <p>
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="index.html"><button class="but">к началу</button></a>
+  </body>
+</html>

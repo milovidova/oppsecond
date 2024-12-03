@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .number {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: lowercase;
+        color: #060606;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 45px;
+        gap: 21px;
+      }
+      .menu {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #060606;
+        display: flex;
+        justify-content: center;
+        gap: 122px;
+        margin-left: -143px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #060606;
+      }
+      .circles {
+        display: flex;
+        justify-content: flex-end;
+        gap: 28px;
+        padding-right: 45px;
+        width: 42px;
+        height: 42px;
+        margin-top: 15px;
+      }
+      /* media */
+      @media only screen and (min-width: 360px) and (max-width: 414px) {
+        body {
+          width: 100%;
+        }
+        .phone {
+          display: none;
+        }
+        .circles {
+          display: none;
+        }
+        .secondscreen {
+          display: block;
+          margin-left: -55px;
+        }
+        .text {
+          font-size: 30px;
+          background-image: none;
+          justify-content: center;
+          margin-left: -10px;
+        }
+        .thirdscreen {
+          display: block;
+          margin-left: 70px;
+        }
+        .but {
+          margin-top: 40px;
+          margin-left: 140px;
+        }
+        .choose {
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          margin-left: 40px;
+          margin-top: 30px;
+        }
+        .big {
+          display: none;
+        }
+        .menu {
+          gap: 20px;
+          font-size: 18px;
+          margin-left: 0px;
+
+          font-family: Proxima Nova;
+          font-weight: 400;
+          line-height: 140%;
+          color: #fff;
+          display: flex;
+          justify-content: cennter;
+        }
+        .number {
+          font-size: 0px;
+        }
+        .header {
+          display: flex;
+          justify-content: center;
+        }
+        .left {
+          display: flex;
+          justify-content: flex-start;
+          padding-left: 0px;
+          gap: 21px;
+        }
+        .twobut {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          margin-left: -10px;
+        }
+        .put {
+          margin-left: 30px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 100%;
+        }
+        .phone {
+          display: none;
+        }
+        .circles {
+          display: none;
+        }
+        .secondscreen {
+          display: block;
+          margin-left: -55px;
+        }
+        .text {
+          font-size: 30px;
+          background-image: none;
+          justify-content: center;
+          margin-left: -10px;
+        }
+        .thirdscreen {
+          display: block;
+          margin-left: 70px;
+        }
+        .but {
+          margin-top: 40px;
+          margin-left: 140px;
+        }
+        .choose {
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          margin-left: 40px;
+          margin-top: 30px;
+        }
+        .big {
+          display: none;
+        }
+        .menu {
+          gap: 20px;
+          font-size: 18px;
+          margin-left: 0px;
+
+          font-family: Proxima Nova;
+          font-weight: 400;
+          line-height: 140%;
+          color: #fff;
+          display: flex;
+          justify-content: cennter;
+        }
+        .number {
+          font-size: 0px;
+        }
+        .header {
+          display: flex;
+          justify-content: center;
+        }
+        .left {
+          display: flex;
+          justify-content: flex-start;
+          padding-left: 0px;
+          gap: 21px;
+        }
+        .twobut {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          margin-left: -10px;
+        }
+      }
+    </style>
+    <!-- menu -->
+    <div class="header">
+      <div class="left">
+        <div class="phone"><img src="images/phone.svg" alt="" /></div>
+        <div class="number"><p>459-568-017</p></div>
+      </div>
+      <div class="menu">
+        <a href="index.html"><p>Главная</p></a>
+        <a href="secondpage.html"><p>Мероприятия</p></a>
+        <a href="form.html"
+          ><p><b>Контакты</b></p></a
+        >
+      </div>
+      <div class="circles">
+        <a href="https://mail.ru/"><img src="images/circle1.svg" alt="" /></a>
+        <a href="http://www.facebook.com.vn/"
+          ><img src="images/circle2.svg" alt=""
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/circle3.svg" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="put">
+      <h3>Оставить заявку</h3>
+      <form
+        action="https://www.bing.com/search?"
+        id="UserEnter"
+        name="UserEnter"
+        target="_blank"
+      >
+        <p><input type="hidden" name="q" value="search" /></p>
+        <p>
+          ФИО:
+          <input type="Text" name="last_name" size="20" value="Иванов" />
+        </p>
+        <p>Возраст: <input type="Number" name="age" size="30" value="0" /></p>
+        <p>
+          Статус:
+          <input type="Radio" name="status" value="fiz" />Физическое лицо
+          <input type="Radio" name="status" value="ur" checked />Юридическое
+          лицо
+
+          <input type="Reset" name="Reset" value="Обновить" />
+          <input type="Submit" name="submit" value="Отправить" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
